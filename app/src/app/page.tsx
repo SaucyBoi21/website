@@ -1,14 +1,19 @@
-import Icon from "./components/icon";
-import Navbar from "./components/navbar";
-import Project from "./components/project";
+import React from "react"
+import {
+  Routes,
+  Route
+} from "react-router"
+import { BrowserRouter as Router } from "react-router-dom"
+import Home from "./pages/home"
+import Projects from "./pages/projects"
+import Navbar from "./components/navbar"
 
-export default function Home() {
+export default function App() {
   return (
     <>
       <Navbar />
-      <Icon />
-      <Project /> 
-    
+      <Home />
+      <Projects /> 
     </>
   )
 }
