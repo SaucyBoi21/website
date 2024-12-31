@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -6,22 +7,21 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar-left">
           <a href="/" className="logo">
-            <img src="" alt="" />
           </a>
         </div>
         <div className="navbar-center">
           <ul className="nav-links">
             <li>
-              <a href="/"></a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/aboutme"></a>
+              <Link href="/aboutme">About Me</Link>
             </li>
             <li>
-              <a href="/projects"></a>
+              <Link href="/projects">Projects</Link>
             </li>
             <li>
-              <a href="/technologies"></a>
+              <Link href="/technologies">Technologies</Link>
             </li>
           </ul>
         </div>

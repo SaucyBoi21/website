@@ -1,18 +1,12 @@
 import React from "react";
-import { Routes, Route } from "react-router";
-import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./pages/home";
-import Projects from "./pages/projects";
-import Technologies from "./pages/technologies";
 import Navbar from "./components/navbar";
+import About from "./pages/about";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <Projects />
-      <Technologies />
+      <About />
     </>
   );
 }
