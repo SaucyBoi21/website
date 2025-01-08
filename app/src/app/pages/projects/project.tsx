@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Project({
-  projectName,
-  projectDescription,
-  projectImage,
-  projectLink,
-}) {
+export default function Project(
+  projectName: string,
+  projectDescription: string,
+  projectImage: string,
+  projectLink: string,
+) {
   return (
     <>
       <h2>{projectName}</h2>
